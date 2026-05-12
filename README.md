@@ -76,6 +76,10 @@ function App() {
 
 We can use a github agentic workflow to carry out some sort of effect and raise PRs against the repo. In this case lets create a github agentic workflow which runs eslint on this application and raises a pull request to fix an issues found.
 
+### Secrets
+
+The basic workflow will require a secret called `COPILOT_GITHUB_TOKEN` which can be set by navgating to respoitory secrets -> Secrets and variables -> Actions -> Repository secrets.
+
 ## Useful gh aw CLI commands
 
 - `gh aw compile` - generates a lock file for the workflow.md file.
