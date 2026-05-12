@@ -1,17 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 
 function App() {
   const [input, setInput] = useState(0);
-  const [userText, setUserText] = useState("No number is set");
-
-  useEffect(() => {
-    if (input === 0) {
-      setUserText("No number is set");
-    } else {
-      setUserText(`You picked ${input}`);
-    }
-  }, [input, setUserText]);
+  const userText = input === 0 ? "No number is set" : `You picked ${input}`;
 
   return (
     <>
