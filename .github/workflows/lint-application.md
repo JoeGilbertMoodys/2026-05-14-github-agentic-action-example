@@ -28,7 +28,7 @@ safe-outputs:
 strict: false
 ---
 
-# Documentation Maintenance Agent
+# Lint application demo
 
 ## Objective
 
